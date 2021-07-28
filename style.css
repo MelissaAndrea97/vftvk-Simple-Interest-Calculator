@@ -1,4 +1,62 @@
-body {background-color:tan;}
-h1{color:green;}
+body{
+    background-color: black ;
+}
+.myDiv {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 650px;
+    height: 515px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background: white;
+    margin-top: 60px;
+    margin-left: 420px;
+}
+.myDiv1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+}
+h1{
+    color:gray;
+    font-size: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -290px;
+    margin-left: -300px;
+}
 
+#principalamount{
+    position: absolute;
+    top: 1px; left: 150px;
+}
+
+#rateinter{
+    position: absolute;
+    top: 55px; left: 150px;
+}
+
+#years{
+    position: absolute;
+    top: 105px; left: 150px;
+}
+
+#textInput{
+    position: absolute;
+    top: 55px; left: 290px;
+}
+
+#symbol{
+    position: absolute;
+    top: 2000px; left: 290px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: 130px;
+    margin-left: -300px;
+}
 

@@ -1,16 +1,44 @@
+<!DOCTYPE html>
 <html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <title> Web App – Simple Interest Calculator</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
+    
     <body>
-        <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <div class="myDiv">
+        
+            <h1 id="header">Simple Interest Calculator</h1>
+            <div class="myDiv1">
+            <label for= "amount">Amount</label>
+            <input type="text" align="left" id="principalamount"><br/>
+            <br><br>
+            <label for= "interest rate">Interest Rate</label>
+            <input type="range" name="rate" min="1" max="20" step="0.5" onchange="updateTextInput(this.value);" id = "rateinter"> 
+            <output type="text"  id="textInput" value=""> </output> <br/>
+            <br><br>
+            <label for= "n de years">No. of Years</label>
+            <input type="number"  id="years" value = "">  <br/>
+            <br><br>
 
-        <button onclick="compute()">Compute</button>
+            <button onclick="compute()">Compute Interest</button> <br/>
+            <br><br>
+         
+            If you deposit principal amount 
+            <mark><output type="text"  id="textInput1" value=""></output> </mark>, <br/>
+            at an interest rate of
+            <mark><output type="text"  id="textInput2" value=""></output> </mark>. <br/>
+            You will receive an amount of 
+            <mark><output type="text"  id="textInput3" value=""></output> </mark>, <br/>
+            in the year  
+            <mark><output type="text"  id="textInput4" value=""></output> </mark>. <br/>
+            <br><br>
+            </div>
+            <label id="symbol"> Ⓒ Everyone Can Get Rich</h6>
+        
+        </div>
+       
     </body>
 </html>
